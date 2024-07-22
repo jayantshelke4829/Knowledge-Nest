@@ -1,0 +1,12 @@
+.smx{
+      display: flex;
+}
+@media (max-width: 640px ) {
+      .smx{
+
+            display: flex;
+            background-color: aquamarine;
+            flex-direction: column;
+            
+      }
+}
