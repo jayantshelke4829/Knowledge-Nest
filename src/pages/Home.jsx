@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import appwriteService from "../appwrite/config";
 import {Container, PostCard} from '../components'
 import { Link } from 'react-router-dom'
-
+import './card.css'
 function Home() {
     const [posts, setPosts] = useState([])
 
@@ -32,9 +32,9 @@ function Home() {
         )
     }
     return (
-        <div className='w-full py-8'>
+        <div className='w-full py-8 card'>
             <Container>
-                <div className='flex flex-wrap'>
+                <div className='flex  flex-wrap'>
                     {posts.map((post) => (
                         <div key={post.$id} className='p-2 w-64'>
                             <PostCard {...post} />
