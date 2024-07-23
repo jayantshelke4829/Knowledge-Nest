@@ -18,17 +18,18 @@
 
 @media screen and (max-width: 640px) {
   .dropdown-content {
-    margin-top: 50px;
+    margin-left: -135px;
+    margin-top: -5px;
     padding-top: 5px;
     padding-bottom: 5px;
-
     position: relative;
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #c5eef36e;
     min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    
   }
   .dropdown,
   .dropbtn {
@@ -38,7 +39,8 @@
   .dropdown {
     position: relative;
     display: inline-block;
-    width: 40%;
+    width: 10%;
+        
   }
   .dropbtn {
     font-size: 16px;

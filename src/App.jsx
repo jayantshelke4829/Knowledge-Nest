@@ -23,7 +23,7 @@ function App() {
   }, [])
   
   return !loading ? (
-    <div className='min-h-screen flex flex-wrap content-between  backdrop-blur-sm bg-slate-200 bg-opacity-20 shadow-[0px_20px_32px_0px_#2d3748] rounded-md'>
+    <div className='small min-h-screen flex flex-wrap content-between  backdrop-blur-sm bg-slate-200 bg-opacity-20 shadow-[0px_20px_32px_0px_#2d3748] rounded-md'>
     
       <div className='w-full block'>
         <Header />

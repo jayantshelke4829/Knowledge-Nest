@@ -1,15 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../Logo'
+import './Footer.css'
 
 function Footer() {
   return (
-    <section className="relative overflow-hidden py-10  border border-t-2 border-l-transparent border-r-transparent  border-b-transparent border-t-black ">
-            <div className="relative z-10 mx-auto max-w-7xl px-4">
+    <section className="relative overflow-hidden py-10  text-center border border-t-2 border-l-transparent border-r-transparent  border-b-transparent border-t-black ">
+            <div className=" relative z-10 mx-auto max-w-7xl px-4">
                 <div className="-m-6 flex flex-wrap">
                     <div className="w-full p-6 md:w-1/2 lg:w-5/12">
                         <div className="flex h-full flex-col justify-between">
-                            <div className="mb-4 inline-flex items-center">
+                            <div className="mb-4 lg:self-start sm:self-center logo  items-center">
                                 <Logo  />
                             </div>
                             <div>

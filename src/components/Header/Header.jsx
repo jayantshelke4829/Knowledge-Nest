@@ -55,10 +55,10 @@ function Header() {
 
             </Link>
           </div>
-          <div className="dropdown flex ">
+          <div className="dropdown ms-auto flex ">
             <button className="dropbtn " ><i className="fa fa-bars" aria-hidden="true"></i>
             </button>
-            <div className="dropdown-content rounded-md backdrop-blur-md opacity-60">
+            <div className="dropdown-content rounded-md pl-4 pr-3 opacity-60">
               <ul className='smx
            '
               >
