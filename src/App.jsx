@@ -7,6 +7,7 @@ import { Footer, Header } from './components'
 import { Outlet } from 'react-router-dom'
 import Snowfall from 'react-snowfall' 
 
+
 function App() {
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
@@ -32,6 +33,7 @@ function App() {
           <Snowfall color="white" snowflakeCount={200} />
         </main>
         <Footer />
+
       </div>
     </div>
   ) : null

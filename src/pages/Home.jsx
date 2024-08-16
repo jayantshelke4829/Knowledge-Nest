@@ -1,8 +1,12 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, lazy, Suspense} from 'react'
 import appwriteService from "../appwrite/config";
-import {Container, PostCard} from '../components'
+import {Container} from '../components'
 import { Link } from 'react-router-dom'
 import './card.css'
+
+// Lazy load the PostCard component
+const PostCard = lazy(() => import('../components/PostCard'));
+
 function Home() {
     const [posts, setPosts] = useState([])
 
@@ -37,7 +41,9 @@ function Home() {
                 <div className='flex  flex-wrap'>
                     {posts.map((post) => (
                         <div key={post.$id} className='p-2 w-64'>
-                            <PostCard {...post} />
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <PostCard {...post} />
+                            </Suspense>
                         </div>
                     ))}
                 </div>
